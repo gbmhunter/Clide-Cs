@@ -4,20 +4,23 @@ Clide (Command Line Interface Development Environment) Library
 
 - Author: gbmhunter <gbmhunter@gmail.com> (http://www.cladlab.com)
 - Created: 2012/03/19
-- Last Modified: 2013/05/30
-- Version: v1.0.0.0
+- Last Modified: 2013/06/02
+- Version: v1.0.0.1
 - Company: CladLabs
-- Project: Free Code Libraries	.
-- Language: C++
-- Compiler: GCC	
+- Project: Free Code Libraries
+- Language: C#
+- Compiler: .NET	
 - uC Model: n/a
-- Computer Architecture: n/a
-- Operating System: n/a
+- Computer Architecture: .NET
+- Operating System: Windows/Linux/MacOS
 - Documentation Format: Doxygen
 - License: GPLv3
 
 Description
 ===========
+
+**This is the C# version of Clide, designed to be run on the .NET platform.
+For the embedded version, see Cpp-Clide.**
 
 A command-line style communication interface designed to make it easy to send messages and
 data between two micro-controllers, a microcontroller and computer, or two computers, via
@@ -43,16 +46,11 @@ that the value is in rpm, "2000" is a non-optional parameter which specifies the
 speed, and "\n" is the new-line character which signifies the end of a message
 (which is normally inserted automatically by command-lines when enter is pressed).
 
-Uses dynamic memory allocation for creating commands/options/parameters e.t.c
-Command data is stored in a contiguous block
-
 All text is case-sensitive. It is recommended to use lower-case only to
 follow the UNIX command-line style.
 
 Special support for the "help" command, and `-h`, `--help` flags for every registered
-command. No special support other UNIX commands such as `man`, `whatis` or `info`
-'help' is a special command which can be implemented by calling
-RegisterHelpCmd()
+command. No special support other UNIX commands such as `man`, `whatis` or `info`.
 
 Internal Dependencies
 =====================
@@ -60,6 +58,7 @@ Internal Dependencies
 These are all included in the repository.
 
 - Clide-Config.cs					-> Configuration file.
+- Clide-Controller.cs				-> Controller object.
 - Clide-Rx.cs						-> Receive object.
 - Clide-Tx.cs						-> Transmit object.
 - Clide-Cmd.cs						-> Command object.
@@ -69,10 +68,7 @@ These are all included in the repository.
 
 External Dependencies
 =====================
-- <stdio.h> 	-> snprintf()
-- <stdlib.h> 	-> realloc(), malloc(), calloc(), free()
-- <cctype>		-> isalnum()
-- <getopt.h>	-> getopt()
+- None
 
 PACKET DECODING PROCESS (RX)
 =============================
@@ -93,9 +89,7 @@ ISSUES
 LIMITATIONS
 ===========
 
-- Maximum number of commands: 256
-- Maximum number of parameters or options per command: 256
-- Maximum string length of a command name, option name/value, parameter value: clideMAX_STRING_LENGTH
+- None documented
 
 Usage
 =====
@@ -107,5 +101,6 @@ Usage
 Changelog
 =========
 
+- v1.0.0.1  -> (2013/06/02) Removed incorrect external dependencies and programming language in README.
 - v1.0.0.0 	-> (2013/05/30) Initial version.
 
