@@ -4,7 +4,7 @@ Clide (Command Line Interface Development Environment) Library
 
 - Author: gbmhunter <gbmhunter@gmail.com> (http://www.cladlab.com)
 - Created: 2012/03/19
-- Last Modified: 2013/06/02
+- Last Modified: 2013/07/03
 - Version: v1.0.0.1
 - Company: CladLabs
 - Project: Free Code Libraries
@@ -12,7 +12,7 @@ Clide (Command Line Interface Development Environment) Library
 - Compiler: .NET	
 - uC Model: n/a
 - Computer Architecture: .NET
-- Operating System: Windows/Linux/MacOS
+- Operating System: Windows/Linux/MacOS (Linux and MacOS are supported with Mono)
 - Documentation Format: Doxygen
 - License: GPLv3
 
@@ -101,6 +101,10 @@ Usage
 Changelog
 =========
 
-- v1.0.0.1  -> (2013/06/02) Removed incorrect external dependencies and programming language in README.
-- v1.0.0.0 	-> (2013/05/30) Initial version.
-
+======== ========== ===================================================================================================
+Version  Date       Comment
+======== ========== ===================================================================================================
+v1.0.0.2 2013/07/03 Changelog in README is now in table format.
+v1.0.0.1 2013/06/02 Removed incorrect external dependencies and programming language in README.
+v1.0.0.0 2013/05/30 Initial version.
+======== ========== ===================================================================================================
