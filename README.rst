@@ -5,7 +5,7 @@ Clide (Command Line Interface Development Environment) Library
 - Author: gbmhunter <gbmhunter@gmail.com> (http://www.cladlab.com)
 - Created: 2012/03/19
 - Last Modified: 2013/07/03
-- Version: v1.0.0.1
+- Version: v1.0.0.3
 - Company: CladLabs
 - Project: Free Code Libraries
 - Language: C#
@@ -70,8 +70,8 @@ External Dependencies
 =====================
 - None
 
-PACKET DECODING PROCESS (RX)
-=============================
+Packet Decoding Process (RX)
+============================
 
 - Remove all non-alphanumeric characters from the start of the packet
 - Split packet into separate arguments
@@ -81,12 +81,12 @@ PACKET DECODING PROCESS (RX)
 - Execute parameter callback functions
 - Execute command callback function
 
-ISSUES
-====
+Issues
+======
 
 - See GitHub Issues
 
-LIMITATIONS
+Limitations
 ===========
 
 - None documented
@@ -104,6 +104,7 @@ Changelog
 ======== ========== ===================================================================================================
 Version  Date       Comment
 ======== ========== ===================================================================================================
+v1.0.0.3 2013/07/03 Formatted some section titles in README that were all-caps.
 v1.0.0.2 2013/07/03 Changelog in README is now in table format.
 v1.0.0.1 2013/06/02 Removed incorrect external dependencies and programming language in README.
 v1.0.0.0 2013/05/30 Initial version.
